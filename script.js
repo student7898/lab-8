@@ -34,3 +34,11 @@ console.log(student.displayInfo);
 
 // Seems to be the case that functions do not get retrieved when converting an object in JSON back to an Object.
 
+// Part 3
+let {name , courses} = student;
+console.log(name);
+console.log(courses);
+
+let scores = [90, 85, 92];
+let [math, science] = scores;
+console.log(math, science);
