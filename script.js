@@ -16,3 +16,21 @@ console.log(student.name);
 console.log(student.age);
 student.displayInfo();
 
+// Part 2
+let studentJSON = JSON.stringify(student);
+console.log(studentJSON);
+let studentObj = JSON.parse(studentJSON);
+console.log(studentObj.name);
+console.log(studentObj.age);
+console.log(studentObj.enrolled);
+console.log(studentObj.courses);
+console.log(studentObj.displayInfo);
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.enrolled);
+console.log(student.courses);
+console.log(student.displayInfo);
+
+// Seems to be the case that functions do not get retrieved when converting an object in JSON back to an Object.
+
