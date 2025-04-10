@@ -62,3 +62,10 @@ student.calculateTotalCourses = function() {
     return this.courses.length;
 }
 console.log(student.calculateTotalCourses());
+
+// Bonus
+
+let averageScore = scores.reduce((currentTotal, score) => currentTotal + score, 0) / scores.length;
+console.log(averageScore);
+
+// Verify average: (90 + 85 + 92) / 3 = 89 
