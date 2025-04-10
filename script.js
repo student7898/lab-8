@@ -42,3 +42,11 @@ console.log(courses);
 let scores = [90, 85, 92];
 let [math, science] = scores;
 console.log(math, science);
+
+// Part 4
+let studentClone = {...student, ...{graduationYear: 2023}};
+console.log(studentClone);
+
+let newCourses = ['English', 'Art'];
+student.courses =  [...student.courses, ...newCourses];
+console.log(student.courses);
