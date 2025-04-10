@@ -3,7 +3,7 @@ let student = {
     name: 'John Doe',
     age: 20,
     enrolled: true,
-    courses: ['Math', 'Science', 'History'],
+    courses: ['Math', 'Biology', 'History'],
     displayInfo: function() {
         console.log("Name: " + this.name);
         console.log("Age: " + this.age);
@@ -50,3 +50,15 @@ console.log(studentClone);
 let newCourses = ['English', 'Art'];
 student.courses =  [...student.courses, ...newCourses];
 console.log(student.courses);
+
+// Part 5
+student.addCourses = function(newCourses) {
+    this.courses = [...this.courses, ...newCourses];
+}
+student.addCourses(['Geography', 'Physics']);
+console.log(student.courses);
+
+student.calculateTotalCourses = function() {
+    return this.courses.length;
+}
+console.log(student.calculateTotalCourses());
