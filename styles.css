@@ -1,0 +1,4 @@
+/* Dark Mode by Default. Nobody likes bright white screen.*/
+body {
+    background-color: rgb(39, 39, 39);
+}
